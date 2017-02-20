@@ -1,11 +1,63 @@
 
 
-<a href='#english'>English</a>
+<a href='#english'>English</a> | 
 <a href='#portugues'>Portugês</a>
 
 <br/><br/><br/>
-
 <div>
+<h1>BLOG LARAVEL - API RESTful</h1>
+
+<p>A small blog created with the Laravel framework, having both a web interface and a RESTful API with OAuth2 authentication.</p>
+
+<h3>INSTALLATION</h3>
+
+<p>Clone the repository<br/>
+<code> git clone https://github.com/wilterson/BlogLaravel-API-RESTful.git blog-laravel</code></p>
+
+<p>Access the project folder<br/>
+<code>cd blog-laravel</code></p>
+
+<p>Install the project dependencies<br/>
+<code>composer install</code></p>
+
+<p>Create the .env file<br/>
+<code>cp .env.example .env</code></p>
+
+<p>With the <code> vim .env </ code> command, edit the information for your database.</p>
+
+<h3>Editing the .env file</h3>
+<p>First, you must have create a database in your SGBD</p>
+<p>Edit the .env file and replace the database information in following lines.<br/>
+
+<pre>
+<code>DB_CONNECTION= 
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+</code>
+</pre>
+</p>
+
+<p>Create a new key for the project<br/>
+<code>php artisan key:generate</code></p>
+
+<h3>Creating the Database tables.</h3>
+<p>After you edit the .env file with the database information, run the following command to create the database tables.<br/>
+<code>php artisan migrate --seed</code></p>
+
+<p>After executing the commands above, the project is configured. Now run the following command to access it:<br/>
+<code>php artisan serve</code></p>
+
+<br/>
+
+<p><b>Note:</b> The system documentation (diagrams, use cases) is located in the "documentation" folder, at the root of the project.</p>
+</div>
+
+<br/><br/>
+
+<div id="portugues">
 <h1>BLOG LARAVEL - API RESTful</h1>
 
 <p>Um pequeno blog criado com o framework Laravel, possuindo tanto uma interface web quanto uma API RESTful com autenticação OAuth2.</p>
@@ -52,7 +104,5 @@ DB_PASSWORD=
 
 <br/>
 
-<p>Obs: A documentação do sistema (diagramas, use cases) se encontram na pasta "documentation", na raiz do projeto.</p>
+<p><b>Obs:</b> A documentação do sistema (diagramas, use cases) se encontram na pasta "documentation", na raiz do projeto.</p>
 </div>
-
-<div id = "english"></div>
