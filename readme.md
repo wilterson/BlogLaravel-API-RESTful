@@ -12,77 +12,43 @@
 <h3>INSTALLATION</h3>
 
 <p>Clone the repository<br/>
-    <pre>
-        <code> 
-            git clone https://github.com/wilterson/BlogLaravel-API-RESTful.git blog-laravel
-        </code>
-    <pre>
-</p>
+<code>git clone https://github.com/wilterson/BlogLaravel-API-RESTful.git blog-laravel</code></p>
 
 <p>Access the project folder<br/>
-    <pre>
-        <code>
-            cd blog-laravel
-        </code>
-    <pre>
-</p>
+<code>cd blog-laravel</code></p>
 
 <p>Install the project dependencies<br/>
-    <pre>
-        <code>
-            composer install
-        </code>
-    <pre>
-</p>   
+<code>composer install</code></p>   
 
 <p>Create the .env file<br/>
-    <pre>
-        <code>
-            cp .env.example .env
-        </code>
-    <pre>
-</p>
+<code>cp .env.example .env</code></p>
 
-<p>With the <code> vim .env </code> command, edit the information for your database.</p>
+<p>With the <code> vim .env </ code> command, edit the information for your database.</p>
 
 <h3>Editing the .env file</h3>
 <p>First, you must have create a database in your SGBD</p>
 <p>Edit the .env file and replace the database information in following lines.<br/>
-    <pre>
-        <code>DB_CONNECTION= 
-            DB_HOST=
-            DB_PORT=
-            DB_DATABASE=
-            DB_USERNAME=
-            DB_PASSWORD=
-        </code>
-    </pre>
+
+<pre>
+<code>DB_CONNECTION= 
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+</code>
+</pre>
 </p>
 
 <p>Create a new key for the project<br/>
-    <pre>
-        <code>
-            php artisan key:generate
-        </code>
-    <pre>
-</p>
+<code>php artisan key:generate</code></p>
 
 <h3>Creating the Database tables.</h3>
 <p>After you edit the .env file with the database information, run the following command to create the database tables.<br/>
-    <pre>
-        <code>
-            php artisan migrate --seed
-        </code>
-    <pre>
-</p>
+<code>php artisan migrate --seed</code></p>
 
 <p>After executing the commands above, the project is configured. Now run the following command to access it:<br/>
-    <pre>
-        <code>
-            php artisan serve
-        </code>
-    <pre>
-</p>
+<code>php artisan serve</code></p>
 
 <br/>
 
@@ -128,29 +94,15 @@ DB_PASSWORD=
 </p>
 
 <p>Crie uma nova chave para o projeto<br/>
-    <pre>
-        <code>
-            php artisan key:generate
-        </code>
-    <pre>
-</p>
+<code>php artisan key:generate</code></p>
 
 <h3>Criando as tabelas do banco.</h3>
 <p>Depois de editar o arquivo .env com as informações do banco de dados, rode o seguinte comando para criar as tabelas do banco de dados.<br/>
-    <pre>
-        <code>
-            php artisan migrate --seed
-        </code>
-    <pre>
-</p>
+<code>php artisan migrate --seed</code></p>
 
 <p>Após executar os comandos acima, o projeto estará configurado. Bansta rodar o seguinte comando para poder acessá-lo:<br/>
-    <pre>
-        <code>
-            php artisan serve
-        </code>
-    <pre>
-</p>
+<code>php artisan serve</code></p>
+
 <br/>
 
 <p><b>Obs:</b> A documentação do sistema (diagramas, use cases) se encontram na pasta "documentation", na raiz do projeto.</p>
