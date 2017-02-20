@@ -79,6 +79,7 @@ DB_PASSWORD=
 <p>Com o comando <code>vim .env</code>, edite as informações referentes ao seu banco de dados.</p>
 
 <h3>Editando o arquivo .env</h3>
+<p>Primeiro, você deverá criar uma database em seu banco de dados. Depois de criá-la, informe os dados no arquivo .env</p>
 <p>Edite o arquivo .env e coloque as informações do seu Banco de Dados, nas seguintes linhas<br/>
 
 <pre>
