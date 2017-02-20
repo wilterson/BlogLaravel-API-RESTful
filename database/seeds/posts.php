@@ -11,13 +11,10 @@ class posts extends Seeder
      */
     public function run()
     {
-	    for($i=0; $i < 100; $i++)
-	    {
-		    DB::table('posts')->insert([
-			    'title'      => "Hello ". $i,
-			    'description' => "Post " . $i,
-			    'author' => 2
-		    ]);
-	    }
+    	DB::table('posts')->insert([
+            'title'      => "Hello World",
+	        'description' => "Post de exemplo. Crie novos posts no meu ao lado",
+			'author' => 2
+	    ]);
     }
 }

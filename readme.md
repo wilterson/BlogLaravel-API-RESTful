@@ -16,17 +16,24 @@
 <p>Crie o arquivo .env<br/>
 <code>cp .env.example .env</code></p>
 
-<p>Crie uma nova chave para o projeto<br/>
-<code>php artisan key:generate</code></p>
+<p>Com o comando <code>vim .env</code>, edite as informações referentes ao seu banco de dados.</p>
 
 <h3>Editando o arquivo .env</h3>
 <p>Edite o arquivo .env e coloque as informações do seu Banco de Dados, nas seguintes linhas<br/>
-<code>DB_CONNECTION=mysql </code>
-<code>DB_HOST=</code>
-<code>DB_PORT=</code>
-<code>DB_DATABASE=</code>
-<code>DB_USERNAME=</code>
-<code>DB_PASSWORD=</code></p>
+
+<pre>
+<code>DB_CONNECTION= 
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+</code>
+</pre>
+</p>
+
+<p>Crie uma nova chave para o projeto<br/>
+<code>php artisan key:generate</code></p>
 
 <h3>Criando as tabelas do banco.</h3>
 <p>Depois de editar o arquivo .env com as informações do banco de dados, rode o seguinte comando para criar as tabelas do banco de dados.<br/>

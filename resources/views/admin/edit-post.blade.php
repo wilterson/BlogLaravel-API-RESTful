@@ -36,7 +36,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="control-label" for="post">Post</label>
-                                <textarea name="description" rows="10" class="form-control" id="post"> {{old('description', $post->title)}}</textarea>
+                                <textarea name="description" rows="10" class="form-control" id="post"> {{old('description', $post->description)}}</textarea>
                             </div>
                         </div>
                         <div class="box-footer text-right">

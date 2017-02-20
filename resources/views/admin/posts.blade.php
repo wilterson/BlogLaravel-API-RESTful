@@ -19,6 +19,13 @@
     <!-- Main content -->
     <section class="content">
         <div class="row">
+            @if($errors->any())
+                <ul class="alert alert-danger">
+                    @foreach($errors->all as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            @endif
             <div class="col-md-12">
                 <div class='box box-primary'>
                     <div class='box-header'>
@@ -41,23 +48,21 @@
                                 </thead>
                                 <tbody>
                                     @foreach($posts as $post)
-                                        @if($post->author == auth()->user()->id)
-                                            <tr>
-                                                <td>{{$post->id}}</td>
-                                                <td>{{$post->title}}</td>
-                                                <td>{{date('d/m/Y H:m:s', strtotime($post->created_at))}}</td>
-                                                <td>
-                                                    <ul class="list-inline">
-                                                    <li><a href="{{route('posts.edit',['post' => $post->id])}}" class="btn btn-primary"><i class="fa fa-pencil"></i> Editar</a></li>
-                                                    <li><form method="POST" action="{{route('posts.destroy', ['post' => $post->id])}}">
-                                                            {{csrf_field()}}
-                                                            {{method_field('DELETE')}}
-                                                            <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
-                                                        </form></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        @endif
+                                        <tr>
+                                            <td>{{$post->id}}</td>
+                                            <td>{{$post->title}}</td>
+                                            <td>{{date('d/m/Y H:m:s', strtotime($post->created_at))}}</td>
+                                            <td>
+                                                <ul class="list-inline">
+                                                <li><a href="{{route('posts.edit',['post' => $post->id])}}" class="btn btn-primary"><i class="fa fa-pencil"></i> Editar</a></li>
+                                                <li><form method="POST" action="{{route('posts.destroy', ['post' => $post->id])}}">
+                                                        {{csrf_field()}}
+                                                        {{method_field('DELETE')}}
+                                                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir</button>
+                                                    </form></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
                                     @endforeach
                                 </tbody>
                             </table>
