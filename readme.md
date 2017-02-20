@@ -21,14 +21,12 @@
 
 <h3>Editando o arquivo .env</h3>
 <p>Edite o arquivo .env e coloque as informações do seu Banco de Dados, nas seguintes linhas<br/>
-<code>
-<p>DB_CONNECTION=mysql </p>
-<p>DB_HOST=</p>
-<p>DB_PORT=</p>
-<p>DB_DATABASE=</p>
-<p>DB_USERNAME=</p>
-<p>DB_PASSWORD=</p>
-</code></p>
+<code>DB_CONNECTION=mysql </code>
+<code>DB_HOST=</code>
+<code>DB_PORT=</code>
+<code>DB_DATABASE=</code>
+<code>DB_USERNAME=</code>
+<code>DB_PASSWORD=</code></p>
 
 <h3>Criando as tabelas do banco.</h3>
 <p>Depois de editar o arquivo .env com as informações do banco de dados, rode o seguinte comando para criar as tabelas do banco de dados.<br/>
