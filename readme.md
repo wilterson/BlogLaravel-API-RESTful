@@ -1,3 +1,11 @@
+
+
+<a href='#english'>English</a>
+<a href='#portugues'>Portugês</a>
+
+<br/><br/><br/>
+
+<div>
 <h1>BLOG LARAVEL - API RESTful</h1>
 
 <p>Um pequeno blog criado com o framework Laravel, possuindo tanto uma interface web quanto uma API RESTful com autenticação OAuth2.</p>
@@ -45,3 +53,6 @@ DB_PASSWORD=
 <br/>
 
 <p>Obs: A documentação do sistema (diagramas, use cases) se encontram na pasta "documentation", na raiz do projeto.</p>
+</div>
+
+<div id = "english"></div>
