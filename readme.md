@@ -23,7 +23,7 @@
 <p>Create the .env file<br/>
 <code>cp .env.example .env</code></p>
 
-<p>With the <code> vim .env </ code> command, edit the information for your database.</p>
+<p>With the <code> vim .env </code> command, edit the information for your database.</p>
 
 <h3>Editing the .env file</h3>
 <p>First, you must have create a database in your SGBD</p>
