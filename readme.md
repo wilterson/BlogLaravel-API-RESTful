@@ -41,3 +41,7 @@ DB_PASSWORD=
 
 <p>Após executar os comandos acima, o projeto estará configurado. Bansta rodar o seguinte comando para poder acessá-lo:<br/>
 <code>php artisan serve</code></p>
+
+<br/>
+
+<p>Obs: A documentação do sistema (diagramas, use cases) se encontram na pasta "documentation", na raiz do projeto.</p>
