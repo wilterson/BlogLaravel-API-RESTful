@@ -20,14 +20,14 @@
 <code>php artisan key:generate</code></p>
 
 <h3>Editando o arquivo .env</h3>
-<p>Edite o arquivo .env e coloque as informações do seu Banco de Dados.<br/>
+<p>Edite o arquivo .env e coloque as informações do seu Banco de Dados, nas seguintes linhas<br/>
 <code>
-DB_CONNECTION=mysql
-DB_HOST=
-DB_PORT=3306
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+DB_CONNECTION=mysql <br/>
+DB_HOST=<br/>
+DB_PORT=<br/>
+DB_DATABASE=<br/>
+DB_USERNAME=<br/>
+DB_PASSWORD=<br/>
 </code></p>
 
 <h3>Criando as tabelas do banco.</h3>
